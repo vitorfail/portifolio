@@ -1,0 +1,71 @@
+.navegador{
+    z-index: 12;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+.logo{
+    height: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h2{
+    color: white;
+}
+.options{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 25%;
+}
+.options h4{
+    margin: 10px;
+}
+.social_media{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10%;
+}
+.social_media div{
+    padding: 5px;
+    border-radius: 50%;
+    border:1px solid white;
+}
+.call{
+    width: 15%;
+}
+.call button{
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    color: black;
+    background: white;
+}
+@media screen and (max-width:700px){
+    .navegador{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: auto;
+    }    
+    .options{
+        height: 40px;
+        width: auto;
+    }
+    .social_media{
+        width: auto;
+    }
+    .social_media div{
+        margin: 10px;
+    }
+}
