@@ -1,0 +1,17 @@
+.progress-bar-cirucle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@media screen and (max-width:780px){
+    .progress-bar-cirucle{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

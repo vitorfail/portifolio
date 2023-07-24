@@ -4,7 +4,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: linear-gradient(to top right, rgb(2, 15, 36) 30%, rgb(3, 26, 61)70%);
 }
 .apresentation{
@@ -16,21 +16,70 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.apresentation .titulo h1{
-    font-size: 30px;
+.apresentation .titulo{
+    height: 70px;
+    overflow: hidden;
+    transition: all ease 0.2s;
+    animation: typing 5s steps(60) forwards;
+}
+.apresentation .titulo span{
+    font-size: 50px;
     font-weight: 500;
-    color: rgb(0, 81, 255);
+    color: rgb(255, 255, 255);
+}
+.apresentation h2{
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid rgb(252, 157, 223);
+    background: linear-gradient(to right, rgb(56, 6, 41), rgb(109, 3, 77));
 }
 .image{
+    animation: flutuar 3s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 59%;
+    transition: all ease 0.2s;
+}
+@keyframes typing {
+    from {
+        border-right:3px solid blue;
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+@keyframes flutuar{
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
 }
 @media screen and (max-width:700px){
     .inicial{
         height: 900px;
-        padding-top: 40px;
+        padding-top: 311px;
+        padding-bottom: 135px;
         flex-direction: column;
+    }
+    .apresentation .titulo{
+        height: 70px;
+    }
+    .apresentation {
+        padding-left: 90px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        color: white;
+        width: 100%;
     }
 }

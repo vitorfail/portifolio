@@ -1,10 +1,13 @@
 .navegador{
     z-index: 12;
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
     height: auto;
     background: transparent;
+}
+.navegador.black{
+    background: linear-gradient(to top right, rgb(0, 0, 0) 30%, rgb(1, 0, 20)70%);
 }
 .logo{
     height: 70px;
@@ -50,7 +53,11 @@
     background: white;
 }
 @media screen and (max-width:700px){
+    .navegador.black{
+        background: transparent;
+    }
     .navegador{
+        position: absolute;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -67,5 +74,8 @@
     }
     .social_media div{
         margin: 10px;
+    }
+    .call {
+        width: auto;
     }
 }

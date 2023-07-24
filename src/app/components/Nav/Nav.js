@@ -1,10 +1,27 @@
+"use client";
 import Image from "next/image"
 import "./Nav.css"
 import {AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai"
+import { useEffect, useState } from "react"
 
 export default function Nav(){
+    const [blackheader, setblackheader] = useState(false)
+    useEffect(()=>{
+        const scrollevent = () =>{
+          if(window.scrollY> 10){
+            setblackheader(true)
+          }
+          else{
+            setblackheader(false)
+          }
+        }
+        window.addEventListener("scroll", scrollevent)
+        return () => {
+          window.removeEventListener("scroll", scrollevent)
+        }
+      },[])
     return(
-        <section className="navegador">
+        <section className={blackheader? "navegador black":"navegador"}>
             <div className="logo">
                 <h2>LOGO</h2>
             </div>
