@@ -1,15 +1,15 @@
 import Image from "next/image"
 import "./Projetos.css"
-import ng from  '../../ng.png'
-import certificado from  '../../certificado.png'
-import covid from  '../../covid.png'
-import ia from  '../../ia.png'
-import marvel from  '../../marvel.png'
-import netflix from  '../../netflix.png'
-import page from  '../../page.png'
-import posto from  '../../posto.png'
-import troco from  '../../troco.png'
-import venda from  '../../venda.png'
+import ng from  '../../ng.PNG'
+import certificado from  '../../certificado.PNG'
+import covid from  '../../covid.PNG'
+import ia from  '../../ia.PNG'
+import marvel from  '../../marvel.PNG'
+import netflix from  '../../netflix.PNG'
+import page from  '../../page.PNG'
+import posto from  '../../posto.PNG'
+import troco from  '../../troco.PNG'
+import venda from  '../../venda.PNG'
 export default function Projetos(){
     return(
         <section className="projetos">
