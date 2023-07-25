@@ -31,15 +31,15 @@ export default function Nav(){
                 <h4>Projetos</h4>
             </div>
             <div className="social_media">
-                <div>
+                <a href="https://www.instagram.com/vitor_andrademanoel04/" target="_blank">
                     <AiFillInstagram color="white"></AiFillInstagram>
-                </div>
-                <div>
+                </a>
+                <a href="https://www.linkedin.com/in/vitor-manoel-programer/" target="_blank">
                     <AiFillLinkedin color="white"></AiFillLinkedin>
-                </div>
-                <div>
+                </a>
+                <a href="https://github.com/vitorfail" target="_blank">
                     <AiFillGithub color="white"></AiFillGithub>
-                </div>
+                </a>
             </div>
             <div className="call">
                 <button className="">Vamos!</button>

@@ -11,11 +11,13 @@
     color: white;
 }
 .projetos h2{
+    font-weight: 700;
     font-size: 40px;
     padding-top: 100px;
 }
 .projetos p{
-    padding-bottom: 40px;
+    font-weight: 600;
+    color: rgb(177, 177, 177);
 }
 .projetos .paginas{
     display: flex;
@@ -57,4 +59,10 @@
 }
 .paginas .page .titulo h2{
     font-size: 40px;
+}
+@media screen and (max-width:750px) {
+    .projetos p {
+        text-align: center;
+        width: 250px;
+    }
 }

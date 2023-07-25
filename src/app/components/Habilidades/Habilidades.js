@@ -32,7 +32,7 @@ export default function Habilidades(){
             <div className="box">
                 <div className="titulo">
                     <h2>Habilidades</h2>
-                    <p>Algumas das minha Habilidades</p>
+                    <p>Algumas das minhas habilidades em algumas linguagens de programação e Frameworks</p>
                 </div>
                 <div className="carousel-container">
                     <div className="carousel">

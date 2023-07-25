@@ -70,9 +70,17 @@
     height: 160px;
   }
   .box .titulo h2{
-    font-size: 34px;
+    font-weight: 600;
+    font-size: 44px;
     color: white;
   }
   .box .titulo p{
-    color: white;
+    font-weight: 600;
+    color: rgb(177, 177, 177);
   }
+@media screen and (max-width:700px){
+  .box .titulo p {
+    width: 270px;
+    text-align: center;
+  }
+}

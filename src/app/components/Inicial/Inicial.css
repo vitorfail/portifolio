@@ -5,7 +5,9 @@
     position: relative;
     width: 100%;
     height: 600px;
-    background: linear-gradient(to top right, rgb(2, 15, 36) 30%, rgb(3, 26, 61)70%);
+    background-image:url("../../banner.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .apresentation{
     padding-left: 90px;
@@ -15,6 +17,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.apresentation .off{
+    display: none;
 }
 .apresentation .titulo{
     height: 70px;
@@ -27,10 +32,15 @@
     font-weight: 500;
     color: rgb(255, 255, 255);
 }
+.apresentation p{
+    font-weight: 600;
+    color: rgb(177, 177, 177);
+}
 .apresentation h2{
     text-align: center;
     align-items: center;
     font-size: 15px;
+    font-weight: 700;
     height: 30px;
     width: 200px;
     border: 1px solid rgb(252, 157, 223);
@@ -41,8 +51,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 59%;
+    width: 45%;
     transition: all ease 0.2s;
+}
+.image img{
+    width: 65%;
 }
 @keyframes typing {
     from {
@@ -82,4 +95,11 @@
         color: white;
         width: 100%;
     }
+    .image img {
+        width: 100%;
+    }
+      .image{
+        width: 85%;
+      }
+    
 }

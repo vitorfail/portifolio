@@ -17,6 +17,8 @@
     align-items: center;
 }
 .logo h2{
+    font-size: 30px;
+    font-weight: 600;
     color: white;
 }
 .options{
@@ -37,10 +39,13 @@
     align-items: center;
     width: 10%;
 }
-.social_media div{
+.social_media a{
     padding: 5px;
     border-radius: 50%;
     border:1px solid white;
+}
+.social_media a:hover{
+    cursor: pointer;
 }
 .call{
     width: 15%;

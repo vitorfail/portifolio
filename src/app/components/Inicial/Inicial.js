@@ -2,14 +2,16 @@
 import Image from "next/image"
 import "./Inicial.css"
 import astronaut from "../../astronaut.png"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function Inicial(){
+    const [anima, setanima] = useState("titulo")
+
     return(
         <section className="inicial">
             <div className="apresentation">
-                <h2>MEU PORTIFÓLIO WEB</h2>
-                <div className="titulo">
+                <h2>Meu portifólio web</h2>
+                <div className={anima}>
                     <span>Oi, Sou Vitor Manoel Programador</span>
                 </div>
                 <p>Me chamo Vitor Manoel de Andrade Souza. Sou 
