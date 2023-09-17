@@ -43,8 +43,8 @@ export default function Habilidades(){
                         <ProgressBarCircule percentual={"30%"} fundo={"rgb(29,29,29)"}>Python</ProgressBarCircule>
                         <ProgressBarCircule percentual={"40%"} fundo={"rgb(29,29,29)"}>Node</ProgressBarCircule>
                     </div>
-                    <button className="btn-prev" onClick={() => passar_direito()} >&#10094;</button>
-                    <button className="btn-next" onClick={() => passar_esquerda()}>&#10095;</button>
+                    <button className="btn-prev" onClick={() => passar_esquerda()} >&#10094;</button>
+                    <button className="btn-next" onClick={() => passar_direito()}>&#10095;</button>
                 </div>
             </div>
         </section>

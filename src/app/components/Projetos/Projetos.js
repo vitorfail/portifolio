@@ -60,7 +60,7 @@ export default function Projetos(){
                     </div>
                     <Image src={netflix} alt="projeto" width={"100%"}></Image>
                 </a>
-                <a href="https://emprestimo-three.vercel.app/" target="_blank" className="page">
+                <a href="https://troco-git-master-vitorfail.vercel.app/" target="_blank" className="page">
                     <div className="titulo">
                         <h2>Simulador de troco</h2>
                         <p>Simulador de troco para treinamento de pessoas para o caixa</p>
