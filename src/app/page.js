@@ -9,7 +9,7 @@ import Estrelas from './components/Estrelas'
 export default function Home() {
   return (
     <main>
-      <Estrelas estrelas={[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]} largura={400} ></Estrelas>
+      <Estrelas estrelas={[0,0,0,0,0,0,0]} largura={400} ></Estrelas>
       <Head>
         <title>Vitor Manoel Portifolio</title>
       </Head>
