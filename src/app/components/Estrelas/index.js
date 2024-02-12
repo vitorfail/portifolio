@@ -20,6 +20,13 @@ export default function Estrelas(props){
                     animationDelay:numeroAleatorio(0, 5)+"s"}}></div>
                 ))}
             </div>
+            {props.star.map((item, key) =>(
+                    <div key={key} className="brilho" style={{"height":numeroAleatorio(0.5, 4), 
+                    aspectRatio:"1/1", marginLeft:numeroAleatorio(-500, 600), 
+                    marginTop:numeroAleatorio(-500, 500),
+                    "--i":key    
+                }}></div>
+                ))}
         </div>
     )
 }
