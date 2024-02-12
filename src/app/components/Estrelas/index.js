@@ -13,7 +13,7 @@ export default function Estrelas(props){
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
     return(
-        <div style={{display:'flex', width:props.largura+"px",height:props.largura+"px"}}  className="estrelas">
+        <div style={{display:'flex', width:"100%",height:props.largura+"px"}}  className="estrelas">
             <div className={inicio?"lista show":"lista"}>
                 {props.estrelas.map((item,key) => (
                     <div className='star' key={key} style={{"--i":numeroAleatorio(14, 34), 
