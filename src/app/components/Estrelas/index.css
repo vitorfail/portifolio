@@ -1,6 +1,5 @@
 .estrelas {
     z-index: 4;
-    transform: rotateZ(241deg);
 	width: 100%;
 	height: 100%; 
     display: flex;
@@ -9,7 +8,8 @@
 	background-size: cover;
 }
 .estrelas .lista{
-    overflow-y: hidden;
+    transform: rotateZ(241deg);
+    overflow: hidden;
     justify-content: space-between;
     width: 100%;
     height: 100%;
@@ -44,33 +44,31 @@
     height: 200%;
 }
 .estrelas .brilho{
-    transform: rotateZ(27deg);
     z-index: 12;
     position: absolute;
-    border-radius: 50%;
     box-shadow: 0px 0px 5px 1px rgb(191, 251, 255);
     background: rgb(191, 251, 255);
     animation: brilho 1s ease-in-out infinite;
     animation-duration:calc(17s / var(--i)); /* Ajuste a duração conforme necessário */
 }
 .estrelas .brilho::before{
-    margin-top: -50%;
+    margin-top: -70%;
     margin-left: 35%;
     border-radius: 70%;
     display: flex;
     content: "";
     background: rgb(191, 251, 255);
     width: 40%;
-    height: 200%;
+    height: 250%;
 }
 .estrelas .brilho::after{
-    border-radius: 70%;
-    margin-top: -112%;
-    margin-left: -60%;
+    border-radius: 100%;
+    margin-top: -142%;
+    margin-left: -30%;
     display: flex;
     content: "";
     background: rgb(191, 251, 255);
-    width: 250%;
+    width: 160%;
     height: 30%;
 }
 @keyframes cair {
@@ -121,10 +119,10 @@
     0%{
         box-shadow: 0px 0px 5px 1px rgb(191, 251, 255);
     }
-    100%{
+    50%{
         box-shadow: 0px 0px 7px 3px rgb(191, 251, 255);
     }
-    0%{
+    100%{
         box-shadow: 0px 0px 5px 1px rgb(191, 251, 255);
     }
 } 

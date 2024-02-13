@@ -16,8 +16,7 @@ export default function Estrelas(props){
         <div style={{display:'flex', width:"100%",height:props.largura+"px"}}  className="estrelas">
             <div className={inicio?"lista show":"lista"}>
                 {props.estrelas.map((item,key) => (
-                    <div className='star' key={key} style={{"--i":numeroAleatorio(14, 34), 
-                    animationDelay:numeroAleatorio(0, 5)+"s"}}></div>
+                    <div className='star' key={key} style={{"--i":numeroAleatorio(14, 34)}}></div>
                 ))}
             </div>
             {props.star.map((item, key) =>(

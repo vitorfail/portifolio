@@ -1,7 +1,10 @@
 .projetos{
     width: 100%;
     min-height: 899px;
-    background: black;
+    background: url("../../wall.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,12 +29,27 @@
     width: 100%;
     min-height: 700px;
 }
-.paginas .page{
+.paginas .capa{
+    transform-style: preserve-3d;
     box-shadow: 0px 0px 20px rgba(231, 53, 192, 0.678);
-    border-radius: 20px;
     width: 400px;
     height: 300px;
     scale: 0.9;
+}
+.paginas .capa{
+    perspective: 2000px;
+}
+.paginas .page{
+    transform-origin: left;
+    width: 100%;
+    height: 100%;
+    scale: 0.9;
+}
+.paginas .page .titulo:hover > .paginas .page{
+    transform: rotateY(-35deg);
+}
+.paginas .page .titulo:hover> .paginas .capa{
+    transform: perspective(2000px);
 }
 .paginas .page img{
     border-radius: 20px;
