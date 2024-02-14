@@ -1,0 +1,91 @@
+.book{
+  transform-style: preserve-3d;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all ease 0.2s;
+  scale: 0.9;
+  width: 433px;
+  height: 335px;
+}
+.book:hover{
+  transform: perspective(2000px);
+  scale: 0.9;
+}.book:hover > h3{
+  opacity: 1;
+}
+.book:hover{
+  scale: 0.9;
+}
+.book:hover> .book--thumb, .book:hover> .book--descri{
+  cursor: grab;
+  transition: 0.2s;
+  z-index: 200;
+  transform: rotateY(-35deg);
+}
+.book:hover> .book--descri{
+  cursor: grab;
+  transition: 0.2s;
+  opacity: 1;
+  z-index: 201;
+  transform: rotateY(-35deg);
+}
+
+.book:hover> .book--thumb img{
+  box-shadow: 2px 0px 10px 1px rgb(0, 0, 0, 0.88);
+}
+.book:hover> .book--thumb{
+}
+.book img{
+  height: 100%;
+  width: 100%;
+}
+.book .titulo{
+  max-width: 20ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+  font-family: Roboto forte;
+  padding-top: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 19px;
+}
+.book h3{
+  background-color: rgba(0, 0, 0, 0.589);
+  padding: 12px;
+  transition: all ease 0.2s;
+  opacity: 0;
+  font-size: 12px;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.book--thumb{
+  box-shadow: 2px 0px 10px 1px rgb(0, 0, 0, 0.88);
+  transition: 0.5s;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.book--descri{
+  background: linear-gradient(transparent, black);
+  z-index: 11;
+  opacity: 0;
+  position: absolute;
+  height: 101%;
+  width: 100.4%;
+}
+.book--descri p{
+  text-align: center;
+  color: white;
+  padding: 11px;
+  font-weight: bold;
+  margin-top: 134px;
+  max-height: 89%;
+  font-size: 19px;
+  overflow-y: auto;
+}
