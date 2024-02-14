@@ -8,6 +8,9 @@
   scale: 0.9;
   width: 433px;
   height: 335px;
+  margin-bottom: 76px;
+  transform: perspective(2000px);
+
 }
 .book:hover{
   transform: perspective(2000px);
@@ -32,11 +35,7 @@
   transform: rotateY(-35deg);
 }
 
-.book:hover> .book--thumb img{
-  box-shadow: 2px 0px 10px 1px rgb(0, 0, 0, 0.88);
-}
-.book:hover> .book--thumb{
-}
+
 .book img{
   height: 100%;
   width: 100%;
@@ -88,4 +87,17 @@
   max-height: 89%;
   font-size: 19px;
   overflow-y: auto;
+}
+.book p{
+  text-align: center;
+}
+.book .texto{
+  height: 76px;
+  background: linear-gradient(125deg, #4a3e74, #28205a);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 2px 10px 3px rgb(0, 0, 0, 0.88);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
 }

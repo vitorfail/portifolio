@@ -5,6 +5,7 @@ import Projetos from './components/Projetos/Projetos'
 import Head from 'next/head'
 import "./index.css"
 import Estrelas from './components/Estrelas'
+import Rodape from './components/Rodape/Rodape'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Inicial></Inicial>
       <Habilidades></Habilidades>
       <Projetos></Projetos>
+      <Rodape></Rodape>
     </main>
   )
 }
