@@ -19,7 +19,7 @@ export default function Home() {
   }, [])
   return (
     <main>
-      <Loading show={load?"loading show": "loading"} ></Loading>:
+      <Loading show={load?"loading show": "loading"} ></Loading>
       <Estrelas estrelas={[0,0,0,0,0,0,0]} star={[0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]} largura={400} ></Estrelas>
       <Head>
         <title>Vitor Manoel Portifolio</title>
