@@ -28,7 +28,7 @@ export default function Projetos(){
                             setativo(true)    
                         }
                     }
-                    if(position.bottom-(position.bottom*0.4) > window.innerHeight){
+                    if(position.bottom > window.innerHeight){
                         d[i].id = ''
                         setativo(false)    
                     }
@@ -38,13 +38,13 @@ export default function Projetos(){
     })
 
     return(
-        <section className="projetos">
+        <section id={ativo?"s":""} className="projetos">
             <div className="titulo">
                 <h2>Projetos</h2>
                 <div className="eng">
-                    <Image className="aparecer" src={I2} width={40} height={40}></Image>
+                    <Image alt="engrenagem" className="aparecer" src={I2} width={40} height={40}></Image>
                     <div className="aparecer">
-                        <Image src={I1} width={40} height={30}></Image>
+                        <Image alt="planos" src={I1} width={40} height={30}></Image>
                     </div>
                 </div>
             </div>

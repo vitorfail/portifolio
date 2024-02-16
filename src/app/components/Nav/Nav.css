@@ -38,6 +38,9 @@
 .options h4{
     margin: 10px;
 }
+.options h4:hover{
+    cursor: pointer;
+}
 .social_media{
     height: 70px;
     display: flex;

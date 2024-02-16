@@ -18,7 +18,7 @@ export default function Inicial(){
                     Freelancer em desenvolvimento web com Reac.js e NEXT.js</p>
             </div>
             <div className="image">
-                <Image width={450} height={450} src={astronaut}></Image>
+                <Image alt="astronaut" width={450} height={450} src={astronaut}></Image>
             </div>
         </section>
     )

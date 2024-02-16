@@ -3,6 +3,7 @@ import Image from "next/image"
 import "./Nav.css"
 import {AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai"
 import { useEffect, useState } from "react"
+import MoverScroll from "../../MoverScroll"
 
 export default function Nav(){
     const [blackheader, setblackheader] = useState(false)
@@ -27,9 +28,9 @@ export default function Nav(){
                     <h2>LOGO</h2>
                 </div>
                 <div className="options">
-                    <h4>Home</h4>
-                    <h4>Habilidades</h4>
-                    <h4>Projetos</h4>
+                    <h4 onClick={() => MoverScroll(".navegador")} >Home</h4>
+                    <h4 onClick={() => MoverScroll(".habilidades")}>Habilidades</h4>
+                    <h4 onClick={() => MoverScroll(".projetos")}>Projetos</h4>
                 </div>
                 <div className="social_media">
                     <a href="https://www.instagram.com/vitor_andrademanoel04/" target="_blank">
