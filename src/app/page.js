@@ -18,17 +18,18 @@ export default function Home() {
     }, 2000);
   }, [])
   return (
-    <main>
-      <Loading show={load?"loading show": "loading"} ></Loading>
-      <Estrelas estrelas={[0,0,0,0,0,0,0]} star={[0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]} largura={400} ></Estrelas>
-      <Head>
-        <title>Vitor Manoel Portifolio</title>
-      </Head>
-      <Nav></Nav>
-      <Inicial></Inicial>
-      <Habilidades></Habilidades>
-      <Projetos></Projetos>
-      <Rodape></Rodape>
-    </main>
+load?<Loading ></Loading>:
+      <main>
+        <Estrelas estrelas={[0,0,0,0,0,0,0]} star={[0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]} largura={600} ></Estrelas>
+        <Head>
+          <title>Vitor Manoel Portifolio</title>
+        </Head>
+        <Nav></Nav>
+        <Inicial></Inicial>
+        <Habilidades></Habilidades>
+        <Projetos></Projetos>
+        <Rodape></Rodape>
+      </main>
+
   )
 }
