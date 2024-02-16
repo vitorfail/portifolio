@@ -10,8 +10,8 @@ import page from  '../../page.PNG'
 import posto from  '../../posto.PNG'
 import troco from  '../../troco.PNG'
 import venda from  '../../venda.PNG'
-import I1 from  '../../i1.PNG'
-import I2 from  '../../i2.PNG'
+import I1 from  './i1.PNG'
+import I2 from  './i2.PNG'
 import Book from "../Book"
 import { useEffect, useState } from "react"
 export default function Projetos(){
