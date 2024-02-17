@@ -10,6 +10,8 @@ import page from  '../../page.PNG'
 import posto from  '../../posto.PNG'
 import troco from  '../../troco.PNG'
 import venda from  '../../venda.PNG'
+import limpeza from  '../../limpeza.PNG'
+import toque from  '../../toque.PNG'
 import I1 from  './i1.png'
 import I2 from  './i2.png'
 import Book from "../Book"
@@ -61,6 +63,8 @@ export default function Projetos(){
                 <Book link={"https://netshoes.vercel.app/"} img={venda}  descricao={"Uma ideia de site para a netshoes"} ></Book>
                 <Book link={"https://emprestimo-three.vercel.app/"} img={ia}   descricao={"Simulador de empréstimo"}></Book>
                 <Book link={"https://landing-page-nine-self.vercel.app/"} img={page}  descricao={"Site feito para o teste em uma empresa, usando Nextjs"}></Book>
+                <Book link={"https://limpeza-teste.vercel.app/login"} img={limpeza}   descricao={"Um sistema de cadastro de usuários onde é possivel ver no plano carteziano a distância dos clientes"}></Book>
+                <Book link={"https://toque-de-ouro.vercel.app/"} img={toque}  descricao={"Template para uma empresa de venda de lingerie"}></Book>
             </div>
         </section>
     )
