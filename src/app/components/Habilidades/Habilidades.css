@@ -10,36 +10,37 @@
   z-index: 10;
   position: relative;
   background: rgb(29, 29, 29);
-  top: -100px;
+  top: -70px;
   border-radius: 40px;
   width: 90%;
-  height: 100%;
+  height: 120%;
 }
 .carousel-container {
-    height: 300px;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
   }
   
   .carousel {
+    justify-content: center;
     overflow-x: hidden;
-    height: 165px;
+    height: 305px;
     display: flex;
     align-items: center;
     min-width: 10000px;
     display: flex;
     transition: transform 0.5s ease;
 }
-  
-
 
   
   .btn-prev,
   .btn-next {
     position: absolute;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     background-color: #333;
     color: #fff;
@@ -83,5 +84,15 @@
   .box .titulo p {
     width: 270px;
     text-align: center;
+  }
+  .box{
+    height: 90%;
+  }
+  .carousel {
+    height: 171px;
+  }
+  .btn-prev,
+  .btn-next {
+    top: 30%;
   }
 }

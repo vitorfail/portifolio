@@ -5,13 +5,35 @@
     align-items: center;
     margin-left: 70px;
     margin-right: 70px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    animation: roda 0.5s linear ;
+}
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
 }
 @media screen and (max-width:780px){
     .progress-bar-cirucle{
+        width: 120px;
+        height: 120px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+@keyframes roda {
+    0%{
+        transition: all 0.2s ease-in-out;
+        background: radial-gradient(closest-side, rgba(0, 0, 0, 0) 0%, transparent 80%, transparent 100%), conic-gradient(rgb(157, 25, 193) 0%, rgb(244, 169, 255) 0deg);
+    }
+    100%{
+        transition: all 0.2s ease-in-out;
+
+        background: radial-gradient(closest-side, rgba(0, 0, 0, 0) 0%, transparent 80%, transparent 100%), conic-gradient(rgb(157, 25, 193) initial, rgb(244, 169, 255) 0deg);
     }
 }

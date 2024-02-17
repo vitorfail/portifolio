@@ -68,6 +68,13 @@
     color: black;
     background: white;
 }
+@media screen and (max-width:600px){
+    .ajuste{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media screen and (max-width:700px){
     .navegador.black{
         background: transparent;
