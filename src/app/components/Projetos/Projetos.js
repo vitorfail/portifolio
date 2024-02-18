@@ -15,6 +15,7 @@ import toque from  '../../toque.PNG'
 import I1 from  './i1.png'
 import I2 from  './i2.png'
 import Book from "../Book"
+import Chuva from "../Chuva"
 import { useEffect, useState } from "react"
 export default function Projetos(){
     const [ativo, setativo] = useState(false)
@@ -41,6 +42,7 @@ export default function Projetos(){
 
     return(
         <section id={ativo?"s":""} className="projetos">
+            <Chuva show={ativo} gotas={[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}></Chuva>
             <div className="titulo">
                 <h2>Projetos</h2>
                 <div className="eng">
