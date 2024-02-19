@@ -28,11 +28,11 @@ export default function Lanterna(){
     return(
         <section className="stage">
             <div id={ativo?'noite-mostra':""} className='text-lanterna'>
-                <p className={ativo?'noite':""} >"No dia mais claro,</p>
-                <p className={ativo?'noite':""}  >na noite mais densa,</p> 
-                <p className={ativo?'noite':""}  >o mal sucumbira ante minha presença, </p>
-                <p className={ativo?'noite':""}  >E aquele que venera o mal há de penar,</p>
-                <p className={ativo?'noite':""}  >Quando a luz do código o encontrar!"</p>
+                <p className={ativo?'noite':""}>&quot;No dia mais claro,&quot;</p>
+                <p className={ativo?'noite':""}>&quot;na noite mais densa,&quot;</p> 
+                <p className={ativo?'noite':""}>&quot;o mal sucumbira ante minha presença, &quot;</p>
+                <p className={ativo?'noite':""}>&quot;E aquele que venera o mal há de penar,&quot;</p>
+                <p className={ativo?'noite':""}>&quot;Quando a luz do código o encontrar!&quot;</p>
             </div>
             <div className="scene">
                 <div className="halo">
