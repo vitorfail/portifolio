@@ -42,7 +42,6 @@ export default function Projetos(){
 
     return(
         <section id={ativo?"s":""} className="projetos">
-            <Chuva show={ativo} gotas={[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]}></Chuva>
             <div className="titulo">
                 <h2>Projetos</h2>
                 <div className="eng">

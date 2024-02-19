@@ -9,6 +9,7 @@ import Estrelas from './components/Estrelas'
 import Rodape from './components/Rodape/Rodape'
 import { useEffect, useState } from 'react';
 import Loading from './components/Loading';
+import Lanterna from "./components/Lanterna"
 
 export default function Home() {
   const [load, setload] = useState(true)
@@ -28,6 +29,7 @@ load?<Loading ></Loading>:
         <Inicial></Inicial>
         <Habilidades></Habilidades>
         <Projetos></Projetos>
+        <Lanterna></Lanterna>
         <Rodape></Rodape>
       </main>
 

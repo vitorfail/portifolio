@@ -3,12 +3,11 @@
     overflow-y: hidden;
     width: 100%;
     height: auto;
-    background: url("../../wall2.jpg");
+    background: url("../../wall.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
     width: 100%;
     min-height: 899px;
     display: flex;
@@ -25,7 +24,7 @@
 }
 #s::after{
     transition: all 7.9s ease-in-out;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.87) 3%, rgba(0, 0, 0, 0.637) 30%,rgba(0, 0, 0, 0.692)90%);    
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.432) 3%, rgba(0, 0, 0, 0.637) 30%,rgba(0, 0, 0, 0.692)90%);    
 }
 .projetos{
     color: white;
@@ -60,6 +59,7 @@
 }
 
 .projetos .titulo{
+    margin-top: 50px;
     position: relative;
     z-index: 12;
     display: flex;
