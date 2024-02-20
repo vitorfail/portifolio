@@ -3,25 +3,65 @@
   src: url("./please.ttf");
 }
 .text-lanterna{
+  transition: all 0.2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 30px;
   background: hsl(262,39%,22%);
-  height: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 34px;
   padding-right: 34px;
 }
 #noite-mostra{
-  animation: brilhar 0.5s ease-in-out;
-  animation-delay: 15.2s;
+  animation: crescer 0.2s forwards, brilhar 16s forwards;
+}
+@keyframes crescer {
+  0%{
+    scale: 0.1;
+  }
+  100%{
+    scale: 1;
+  }
+}
+@keyframes fundo {
+  0%{
+    background: radial-gradient( circle at 50% 70%,var(--c-bg) 0%, black 20%, black 40%);
+  }
+  96%{
+    background: radial-gradient( circle at 50% 70%,var(--c-bg) 0%, black 20%, black 40%);
+  }
+  97%{
+    background: radial-gradient( circle at 50% 70%,var(--c-bg) 0%, black 20%, black 40%);
+  }
+  100%{
+    background: radial-gradient( circle at 50% 50%,var(--c-bg) 0%, black 65%, black 20%);
+
+  }
+}
+@keyframes crescer {
+  0%{
+    scale: 0.1;
+  }
+  100%{
+    scale: 1;
+  }
 }
 @keyframes brilhar {
-  100%{
+  0%{
+    box-shadow:0px 0px 0px 0px hsla(262, 49%, 67%, 0.664)
+  }
+  96%{
+    box-shadow:0px 0px 00px 0px hsla(262, 49%, 67%, 0.664)
+  }
+  97%{
     box-shadow:0px 0px 40px 20px hsla(262, 49%, 67%, 0.664)
+  }
+  100%{
+    box-shadow:0px 0px 40px 10px hsla(262, 95%, 83%, 0.664)
   }
 }
 .stage .noite{
@@ -58,26 +98,28 @@
 .stage p{
   opacity: 0;
   width: 100%;
-  height: 30px;
+  height: 22px;
   text-align: center;
   overflow: hidden;
   word-wrap: break-word;
-  text-shadow: 1px 1px 5px black;
-  font-size: 25px;
-  color: rgb(251, 238, 255);
-  font-family: Please;
+  text-shadow: 1px 1px 5px #000;
+  font-size: 17px;
+  color: #fbeeff;
+  font-weight: 300;
 }
 .stage {
   --c-bg: hsl(262,39%,20%);
-
   align-items: center;
-  background: radial-gradient( closest-side,var(--c-bg)5%, black 95%);
+  background: radial-gradient( circle at 50% 70%,var(--c-bg) 0%, black 20%, black 40%);
   display: flex;
   height: 1000px;
   flex-direction: column;
   justify-content: center;
   overflow-y: hidden;
   width: 100%;
+}
+#stage-noite{
+  animation: fundo 15.9s forwards;
 }
 
 .scene {
@@ -380,9 +422,9 @@
   animation: planet-light-anim 2.5s forwards linear infinite;
   background-color: var(--light);
   border-radius: 50%;
-  content: '';
+  content: '<div>';
   position: absolute;
-
+  color: white;
   top: -20px;
   right: -20px;
   bottom: -20px;

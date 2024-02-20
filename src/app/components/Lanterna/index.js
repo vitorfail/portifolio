@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 export default function Lanterna(){
     const [ativo, setativo] = useState(false)
+    const [inicio ,setinicio] = useState(false)
     useEffect(() => {
         window.addEventListener('scroll', function() {
             var d = document.getElementsByClassName("stage")
@@ -14,19 +15,14 @@ export default function Lanterna(){
                     console.log(position.top+ "  "+window.innerHeight)
                     if(position.top+100 < window.innerHeight){
                         if(ativo !==true){
-                            d[i].id = 'show'
                             setativo(true)    
                         }
-                    }
-                    if(position.top > window.innerHeight){
-                        d[i].id = ''
-                        setativo(false)    
                     }
                 }
             }
         })});
     return(
-        <section className="stage">
+        <section id={ativo?'stage-noite':""} className="stage">
             <div id={ativo?'noite-mostra':""} className='text-lanterna'>
                 <p className={ativo?'noite':""}>&quot;No dia mais claro,&quot;</p>
                 <p className={ativo?'noite':""}>&quot;na noite mais densa,&quot;</p> 
