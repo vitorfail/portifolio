@@ -44,7 +44,7 @@ export default function Nav(){
                     </a>
                 </div>
                 <div className="call">
-                    <button className="">Vamos!</button>
+                    <a className="" href="#" download="Vitor curriculo.pdf">Meu Currículo!</a>
                 </div>
 
             </div>

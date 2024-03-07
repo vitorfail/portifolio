@@ -61,9 +61,12 @@
     justify-content: flex-end;
     width: 15%;
 }
-.call button{
+.call a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 5px;
-    width: 100px;
+    width: 140px;
     height: 50px;
     color: black;
     background: white;
