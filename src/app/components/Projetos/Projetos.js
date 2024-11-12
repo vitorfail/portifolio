@@ -61,7 +61,6 @@ export default function Projetos(){
                 <Book link={"https://posto-vitorfail.vercel.app/"} img={posto}  descricao={"Um simulador de bomba de combustível para treinamentO inicial de frentistas"}></Book>
                 <Book link={"https://certificado-marker.vercel.app/"} img={certificado}  descricao={"Sistema que gera certificados. O Beckend é inteirAmente em python"} ></Book>
                 <Book link={"https://mapa-covid.vercel.app/"} img={covid}  descricao={"MapeamentO de casos de covid no ceara e em pernambuco no ano de 2021"}></Book>
-                <Book link={"https://netflix-eight-tan.vercel.app/"} img={netflix}  descricao={"Clone da netflix usadno React"} ></Book>
                 <Book link={"https://troco-vitorfail.vercel.app/"} img={troco}  descricao={"Sistema que estimula o pensamento rápido na hora de passar troco"}></Book>
                 <Book link={"https://netshoes.vercel.app/"} img={venda}  descricao={"Uma ideia de site para a netshoes"} ></Book>
                 <Book link={"https://emprestimo-three.vercel.app/"} img={ia}   descricao={"Simulador de empréstimo"}></Book>
