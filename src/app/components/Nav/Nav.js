@@ -44,8 +44,8 @@ export default function Nav(){
                     </a>
                 </div>
                 <div className="call">
-                    <a className="" href="#" download="Vitor curriculo.pdf">Meu Currículo!</a>
-                </div>
+    <a href="/Vitor-curriculo.pdf" download="Vitor-curriculo.pdf">Meu Currículo!</a>
+</div>
 
             </div>
         </section>
