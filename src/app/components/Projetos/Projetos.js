@@ -71,7 +71,6 @@ export default function Projetos(){
                 <Book link={"https://gestaofinanceira360.app/"} img={gf1}  descricao={"Site para venda de planilhas para gestão financeira"}></Book>
                 <Book link={"https://jurisgrouted.com/"} img={juris}  descricao={"Landing page para captação de advogados"}></Book>
                 <Book link={"https://gestaofinanceira360.app/dashboard/"} img={gf2}  descricao={"Site para venda de planilhas para gestão financeira"}></Book>
-
             </div>
         </section>
     )
